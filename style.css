@@ -1,0 +1,35 @@
+body {
+	width: 80%;
+	height: 100vh;
+	background-color: #888;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 14px #000;
+	text-align: center;
+	margin-left: -2rem;
+	padding: 1rem 2rem;
+	transition: 0.5s;
+}
+
+.card:hover {
+	transform: translate(-1rem,-1rem);
+	box-shadow: 0 0 18px aqua;
+	text-shadow: 0 0 10px #f00;
+}
+
+.card:hover ~ .card {
+	transform: translateX(1rem);
+}
